@@ -1,0 +1,42 @@
+{
+    "name": "create-firebase-expo-cljs-app",
+    "version": "0.0.1",
+    "description": "Create a react native application with Firebase, Expo, and Shadow-CLJS!",
+    "main": "index.js",
+    "bin": {
+        "create-firebase-expo-cljs-app": "./bin/create-firebase-expo-cljs-app.js"
+    },
+    "engines": {
+        "node": ">=10.12"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "firebase",
+        "expo",
+        "cljs",
+        "clojure",
+        "clojurescript",
+        "clj",
+        "react-native",
+        "react"
+    ],
+    "dependencies": {
+        "chalk": "^3.0.0",
+        "ora": "^4.0.3",
+        "semver": "^7.1.3",
+        "shelljs": "^0.8.3"
+    },
+    "files": [
+        "bin",
+        "dist",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jgoodhcg/create-firebase-expo-cljs-app.git"
+    },
+    "author": "Justin Good",
+    "license": "ISC"
+}

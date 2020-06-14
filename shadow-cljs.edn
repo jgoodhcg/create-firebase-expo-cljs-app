@@ -1,0 +1,6 @@
+{:deps  true
+ :builds
+ {:lib {:exports-var create-firebase-expo-cljs-app.lib/exports
+        :output-to   "dist/lib.js"
+        :target      :node-library}}
+ :nrepl {:port 3333}}
