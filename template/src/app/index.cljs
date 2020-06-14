@@ -11,6 +11,7 @@
    [reagent.core :as r]
    [re-frame.core :refer [subscribe dispatch dispatch-sync]]
    [shadow.expo :as expo]
+   [app.secrets :refer [firebase-config]]
    [app.fx]
    [app.handlers]
    [app.subscriptions]
@@ -104,5 +105,6 @@
 
 (defn init []
   (dispatch-sync [:initialize-db])
+  (dispatch-sync [:initialize-firebase firebase-config])
   (dispatch-sync [:set-version version])
   (start))
