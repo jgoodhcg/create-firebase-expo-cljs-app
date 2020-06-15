@@ -53,6 +53,13 @@
   {:db       (assoc (:db cofx) :last-screen screen)
    :navigate screen})
 
+(defn navigate-to-last-screen [cofx [_ _]]
+  (let [last-screen (->> cofx :db :last-screen)]
+    (merge
+      {:db (:db cofx)}
+      (when (some? last-screen)
+        {:navigate last-screen}))))
+
 (defn initialize-firebase [cofx [_ config]]
   {:db            (:db cofx)
    :firebase-init config})
@@ -61,4 +68,5 @@
 (reg-event-db :set-theme [base-interceptors] set-theme)
 (reg-event-db :set-version [base-interceptors] set-version)
 (reg-event-fx :navigate [base-interceptors] navigate)
+(reg-event-fx :navigate-to-last-screen [base-interceptors] navigate-to-last-screen)
 (reg-event-fx :initialize-firebase [base-interceptors] initialize-firebase)
