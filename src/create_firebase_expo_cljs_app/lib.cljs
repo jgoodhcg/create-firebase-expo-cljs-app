@@ -10,21 +10,20 @@
   (.log
     js/console
     (str
-      "\nSuccess! Created " name " at " abs-path "
-Inside that directory, you can run several commands:
+      "\nSuccess! Created " name " at " abs-path
+      "\nInside that directory, you can run several commands:"
+      "\n  "(blue (:shadow commands))
+      "\n    Starts the shadow compiler."
+      "\n  "(blue (:start commands))
+      "\n    Starts the javascript bundler."
+      "\n"
+      "\n  Begin by: \n  "
 
-  " (blue (:shadow commands)) "
-    Starts the shadow compiler.
-
-  " (blue (:start commands)) "
-    Starts the javascript bundler.
-
-We suggest that you begin by: \n  "
-
-      (blue (str "cd " path)) "\n  "
+      (yellow (str "cp " path "/src/secrets.cljs.example "path"/src/secrets.cljs"))
+      (yellow (str "cd " path)) "\n  "
       (when install-failed? (str (blue (:install commands)) "\n  "))
-      (blue (:shadow commands)) "\n  "
-      "Then in " (yellow "another") " terminal session run:\n  "
+      (yellow (:shadow commands))
+      "\n  Then in " (yellow "another") " terminal session run:\n  "
       (blue (:start commands)) "\n\n"
       "Happy hacking! \n")))
 
