@@ -1,10 +1,10 @@
-# Create Expo CLJS App
+# Create Firebase Expo CLJS App
 
-Create Expo ClojureScript apps with a single command.<br>
+Create Firebase Expo ClojureScript apps with a single command.<br>
 It is focused on making it easy for JS and React developers to get started with ClojureScript.
 
-Create Expo CLJS App works on Windows, Linux, and macOS.<br>
-If something doesn’t work, please [file an issue](https://github.com/jgoodhcg/create-expo-cljs-app/issues/new).<br>
+Create Firebase Expo CLJS App works on Windows, Linux, and macOS.<br>
+If something doesn’t work, please [file an issue](https://github.com/jgoodhcg/create-firebase-expo-cljs-app/issues/new).<br>
 
 Inspired by [create-cljs-app](https://github.com/filipesilva/create-cljs-app) and [reagent-expo](https://github.com/thheller/reagent-expo).
 
@@ -44,7 +44,7 @@ To create a new app, you may choose one of the following methods:
 ### npx
 
 ```sh
-npx create-expo-cljs-app my-app
+npx create-firebase-expo-cljs-app my-app
 ```
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher)_
 
@@ -96,4 +96,4 @@ my-app
 
 ## License
 
-Create Expo CLJS App is open source software [licensed as MIT](https://github.com/jgoodhcg/create-expo-cljs-app/blob/master/LICENSE.md).
+Create Firebase Expo CLJS App is open source software [licensed as MIT](https://github.com/jgoodhcg/create-firebase-expo-cljs-app/blob/master/LICENSE.md).
